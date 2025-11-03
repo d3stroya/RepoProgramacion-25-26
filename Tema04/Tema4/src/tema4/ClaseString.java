@@ -1,5 +1,7 @@
 package tema4;
 
+import java.util.Scanner;
+
 
 /**
  * La clase String pertenece al paquete java.lang,
@@ -23,21 +25,38 @@ public class ClaseString {
      */
     public static void main(String[] args) {
         // Declarar una variable de tipo String
-        
+        String nombre;
+        String nombre1;
         
         // Inicializar la variable
+        nombre = "Manolo";
+        nombre1 = "manolo";
         
         
         // Declarar e inicializar una variable de tipo String
+        String apellido = "Arsanaliev";
         
         
         // Pedir una cadena al usuario
+//        Scanner entrada = new Scanner(System.in);
+//        System.out.print("¿Cuál fue el último trofeo que ganaste?: ");
+//        String trofeo = entrada.nextLine();
+//        System.out.println("Has ganado el trofeo " + trofeo);
         
         
         // Comparar dos valores ( .equals() e .equalsIgnoreCase() )
-        
-        
-        
+        if(nombre.equals(nombre1)) {
+            System.out.println("Son iguales");
+        } else {
+            System.out.println("Son distintos");
+        }
+
+        if(nombre.equalsIgnoreCase(nombre1)) {
+            System.out.println("Son iguales");
+        } else {
+            System.out.println("Son distintos");
+        }
+                
     }    
 
 }
