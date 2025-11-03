@@ -43,3 +43,6 @@ Tema2/Tema2/nbproject/private/private.xml
 *.xml
 *.mf
 *.properties
+/Examenes/CodigoConErrores/nbproject/private/
+/Examenes/CodigoConErrores/build/
+/Tema04/ProyectoRA-1-2-3_GestionColaCorreos
