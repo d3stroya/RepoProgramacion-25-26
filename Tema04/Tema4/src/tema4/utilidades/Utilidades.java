@@ -15,14 +15,27 @@ public class Utilidades {
      */
     public static int pedirNumero() {
         int num = -1;
+        boolean numValido;
         
-        try {
-            Scanner entrada = new Scanner(System.in);
-            System.out.print("Escribe un número: ");
-            num = entrada.nextInt();                        
-        } catch(InputMismatchException e) {
-            System.out.println("Has introducido un valor no válido");
-        }
+        do {
+            numValido = true;
+            
+            try {
+                Scanner entrada = new Scanner(System.in);
+                System.out.print("Escribe un número: ");
+                num = entrada.nextInt(); 
+                
+                if(num <= 1) {
+                    numValido = false;
+                    System.out.println("Debes escribir un número mayor que 1.");
+                }
+                
+            } catch(InputMismatchException e) {
+                System.out.println("Has introducido un valor no válido");
+                numValido = false;
+            }
+            
+        } while(!numValido);
         
         return num;
     }
