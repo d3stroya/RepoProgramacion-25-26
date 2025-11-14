@@ -87,9 +87,23 @@ public class ProgramacionOrientadaAObjetos {
 
         // 4 / COMPOSICIÓN DE CLASES
         // 4.1 / Creo un ciclista
-
+        Ciclista pogacar = new Ciclista("Pogacar", 1, "Líder");
         
         // 4.2 / Creo una bici
+        Bicicleta biciPogacar = new Bicicleta(
+                2, 
+                "recto", 
+                "de carretera", 
+                "de disco", 
+                true, 
+                pogacar
+        );
+        
+        // 4.3 / Imprimo por pantalla la bici con el ciclista
+        System.out.println(biciPogacar);
+        
+        // 4.4 / Accedo al nombre del ciclista de la bici
+        System.out.println(biciPogacar.getCiclista().getNombre());
         
 
     }   

@@ -17,6 +17,7 @@ public class Bicicleta {
     private static int numBicicletas = 0;
     
     // 1.3. ATRIBUTO DE OTRA CLASE (Composición de clases)
+    private Ciclista ciclista;
     
 
     // 2. CONSTRUCTORES
@@ -32,6 +33,7 @@ public class Bicicleta {
         incrementarNumBicicletas();
         
         // 1.3. ¡IMPORTANTE! Inicializamos un ciclista por defecto (con el constructor por defecto) 
+        this.ciclista = new Ciclista();
          
     }
 
@@ -47,6 +49,7 @@ public class Bicicleta {
         incrementarNumBicicletas();
         
         // 1.3. Inicializamos un ciclista con los valores pasados por parámetro
+        this.ciclista = ciclista;
         
     } 
 
@@ -92,7 +95,13 @@ public class Bicicleta {
     }
     
     // 1.3. Añadimos el get y set de Ciclista
+    public Ciclista getCiclista() {
+        return this.ciclista;
+    }
     
+    public void setCiclista(Ciclista ciclista) {
+        this.ciclista = ciclista;
+    }
     
     /**
      * Método estático que devuelve
@@ -134,10 +143,10 @@ public class Bicicleta {
                 ", un manillar " + this.manillar + 
                 ", unos pedales " + this.pedales + 
                 ", unos frenos " + this.frenos + 
-                " y ahora ¿se está pedaleando? " + this.estaPedaleando; 
+                " y ahora ¿se está pedaleando? " + this.estaPedaleando + 
                 
                 // 1.3. Imprimimos la información del ciclista 
                 // (coge el mensaje de ciclista.toString()
-                
+                this.ciclista.toString();
     }
 }
