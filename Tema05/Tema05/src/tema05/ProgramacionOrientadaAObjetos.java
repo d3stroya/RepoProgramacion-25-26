@@ -16,7 +16,9 @@ public class ProgramacionOrientadaAObjetos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // CREACIÓN DE OBJETOS A PARTIR DE CLASES PERSONALIZADAS
+        // ------------------------------------------------------//
+        // CREACIÓN DE OBJETOS A PARTIR DE CLASES PERSONALIZADAS //
+        // ------------------------------------------------------//
         
         // 1. Instancio un objeto del tipo que he creado
         // 1.1. Con constructor parametrizado y estableciendo valores con setters        
@@ -42,9 +44,18 @@ public class ProgramacionOrientadaAObjetos {
 //        System.out.println(tuCoche.getRuedas());
 
 
-        // 1. MODIFICADORES DE ACCESO, 2. MODIFICADOR STATIC Y 3. PASO DE PARÁMETROS POR VALOR Y REFERENCIA
+
+
+
+
+
+        // ------------------------------------------------//
+        // 1. MODIFICADORES DE ACCESO,                     //
+        // 2. MODIFICADOR STATIC Y                         //
+        // 3. PASO DE PARÁMETROS POR VALOR Y REFERENCIA    //
+        // ------------------------------------------------//
         
-// 1 / 1.1. MODIFICARES DE ACCESO
+        // 1 / 1.1. MODIFICARES DE ACCESO
 //        Bicicleta bicicleta = new Bicicleta();
 //        System.out.println(bicicleta.ruedas);
 //        System.out.println(bicicleta.getEstaPedaleando());
@@ -59,19 +70,37 @@ public class ProgramacionOrientadaAObjetos {
         // 2 / 1.2. MODIFICADOR STATIC
         // Al ser un método estático, se le llama desde la clase, 
         // no desde el objeto: Bicicleta.getNumBicicletas()
-        System.out.println(Bicicleta.getNumBicicletas());
+//        System.out.println(Bicicleta.getNumBicicletas());
         
         
         
         // 3 / PASO DE PARÁMETROS POR VALOR O POR REFERENCIA
-        int num1 = 4;
-        System.out.println(suma(num1));
+//        int num1 = 4;
+//        System.out.println(suma(num1));
         
-        Bicicleta bici = new Bicicleta(2, "recto", "MTB", "de disco", true);
-        empezarAPedalear(bici);
-        System.out.println(bici);
+//        Bicicleta bici = new Bicicleta(2, "recto", "MTB", "de disco", true);
+//        empezarAPedalear(bici);
+//        System.out.println(bici);
+
+
+
+
+        // 4 / COMPOSICIÓN DE CLASES
+        // 4.1 / Creo un ciclista
+
         
+        // 4.2 / Creo una bici
+        
+
     }   
+    
+    
+    
+    
+    
+    
+    
+    
     
     // Todos los métodos de la clase principal deben ser estáticos,
     // porque el main() es estático y, por tanto, estamos en un contexto estático.

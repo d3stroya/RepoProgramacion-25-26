@@ -15,6 +15,9 @@ public class Bicicleta {
     
     // 1.2. ATRIBUTO STATIC (ESTÁTICO) QUE PERTENECE A LA CLASE
     private static int numBicicletas = 0;
+    
+    // 1.3. ATRIBUTO DE OTRA CLASE (Composición de clases)
+    
 
     // 2. CONSTRUCTORES
     // 2.1. Por defecto
@@ -25,20 +28,26 @@ public class Bicicleta {
         this.frenos = "";
         this.estaPedaleando = false;
         
-        // Incrementamos el valor del atributo estático
+        // 1.2. Incrementamos el valor del atributo estático
         incrementarNumBicicletas();
+        
+        // 1.3. ¡IMPORTANTE! Inicializamos un ciclista por defecto (con el constructor por defecto) 
+         
     }
 
     // 2.2. Parametrizado
-    public Bicicleta(int ruedas, String manillar, String pedales, String frenos, boolean estaPedaleando) {
+    public Bicicleta(int ruedas, String manillar, String pedales, String frenos, boolean estaPedaleando, Ciclista ciclista) {
         this.ruedas = ruedas;
         this.manillar = manillar;
         this.pedales = pedales;
         this.frenos = frenos;
         this.estaPedaleando = estaPedaleando;
         
-        // Incrementamos el valor del atributo estático
+        // 1.2. Incrementamos el valor del atributo estático
         incrementarNumBicicletas();
+        
+        // 1.3. Inicializamos un ciclista con los valores pasados por parámetro
+        
     } 
 
     // 3. GETTERS Y SETTERS
@@ -82,6 +91,9 @@ public class Bicicleta {
         return this.estaPedaleando;
     }
     
+    // 1.3. Añadimos el get y set de Ciclista
+    
+    
     /**
      * Método estático que devuelve
      * el número de bicicletas instanciadas (creadas).
@@ -93,6 +105,9 @@ public class Bicicleta {
      */
     public static int getNumBicicletas() {
         return numBicicletas;
+        
+        // return this.numBicicletas;   // MAL porque this hace referencia al objeto, 
+                                        // pero numBicicletas pertenece a la clas
     }
 
 
@@ -115,10 +130,14 @@ public class Bicicleta {
     // 4. TO STRING
     @Override
     public String toString() {
-        return "Mi bicicleta tiene " + this.ruedas + " ruedas" +
+        return "Esta bicicleta tiene " + this.ruedas + " ruedas" +
                 ", un manillar " + this.manillar + 
                 ", unos pedales " + this.pedales + 
                 ", unos frenos " + this.frenos + 
-                " y ahora ¿estoy pedaleando? " + this.estaPedaleando;
+                " y ahora ¿se está pedaleando? " + this.estaPedaleando; 
+                
+                // 1.3. Imprimimos la información del ciclista 
+                // (coge el mensaje de ciclista.toString()
+                
     }
 }
