@@ -78,10 +78,21 @@ public class ProgramacionOrientadaAObjetos {
 //        int num1 = 4;
 //        System.out.println(suma(num1));
         
-//        Bicicleta bici = new Bicicleta(2, "recto", "MTB", "de disco", true);
+//        Bicicleta bici = new Bicicleta(2, "recto", "MTB", "de disco", true, new Ciclista());
 //        empezarAPedalear(bici);
 //        System.out.println(bici);
-
+//
+//        // bici2 y bici apuntan al mismo objeto
+//        Bicicleta bici2 = bici;
+//        bici2.setEstaPedaleando(false);
+//        
+//        System.out.println(bici.getEstaPedaleando());
+//        System.out.println(bici2.getEstaPedaleando());
+//        
+//        // Podemos ver que el hashCode del objeto es el mismo (porque es el mismo objeto, 
+//        // con su referencia guardada en dos cajas distintas).
+//        System.out.println(bici.getClass().hashCode());
+//        System.out.println(bici2.getClass().hashCode());
 
 
 

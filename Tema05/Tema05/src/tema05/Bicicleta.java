@@ -116,7 +116,7 @@ public class Bicicleta {
         return numBicicletas;
         
         // return this.numBicicletas;   // MAL porque this hace referencia al objeto, 
-                                        // pero numBicicletas pertenece a la clas
+                                        // pero numBicicletas pertenece a la clase
     }
 
 
