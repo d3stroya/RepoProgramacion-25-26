@@ -34,6 +34,10 @@ public class Taxi extends Vehiculo {
     // TO STRING
     @Override
     public String toString() {
-        return super.toString() + ". TAXI con número de licencia " + numeroLicencia;
+        return "Taxi" +
+                "\n · Matrícula: " + super.getMatricula() +
+                "\n · Modelo: " + super.getModelo() +
+                "\n · Potencia: " + super.getPotenciaCV() +
+                "\n · Número de licencia: " + this.numeroLicencia;
     }
 }
