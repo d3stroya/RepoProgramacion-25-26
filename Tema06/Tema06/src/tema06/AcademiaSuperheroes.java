@@ -34,11 +34,14 @@ public class AcademiaSuperheroes {
         // un objeto de cada subclase (uno Hulk y otro Flash).
         
         // 3. La misma expresión superheroe.entrenar() se comporta de forma distinta
-//        superheroe = new Hulk("Hulk", 600);
+        superheroe = new Hulk("Hulk", 600);
+        superheroe.entrenar();
+        
+//        Hulk hulk = new Hulk("Hulk1", 500);
 //        superheroe.entrenar();
         
-//        superheroe = new Flash("Flash", 3000);
-//        superheroe.entrenar();
+        superheroe = new Flash("Flash", 3000);
+        superheroe.entrenar();
         
         
         
@@ -46,17 +49,18 @@ public class AcademiaSuperheroes {
 //        superheroe.dejarEstela();
 
         // 5. Solo podemos hacerlo desde la subclase       
-//        Flash flash = new Flash("Nuevo Flash", 2000);        
+        Flash flash = new Flash("Nuevo Flash", 2000);        
 //        flash.dejarEstela();
         
         // 6. Además, podemos usar los métodos de la superclase que Flash hereda
 //        flash.presentarse();
+//        superheroe.presentarse();
         
         
         
         // 7. Podemos cambiar de cajita a los superhéroes usando casting
-//        flash = (Flash)superheroe;
-//        System.out.println(flash);
+        flash = (Flash)superheroe;
+        System.out.println(flash);
     }    
 
 }

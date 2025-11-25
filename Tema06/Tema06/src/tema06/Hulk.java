@@ -49,8 +49,5 @@ public class Hulk extends Superheroe {
                 "\n · Nombre: " + super.getNombre() +
                 "\n · Fuerza bruta:" + fuerzaBruta;
     }
-
-
-
    
 }
