@@ -90,6 +90,11 @@ public class Flash extends Superheroe implements SuperVelocidad, Defensa {
         System.out.println("Flash: ¡Esquivo ataques a la velocidad del rayo!");
     }
 
+    
+    
+    
+    
+    
     // TO STRING
     @Override
     public String toString() {
@@ -97,5 +102,6 @@ public class Flash extends Superheroe implements SuperVelocidad, Defensa {
                 "\n · Nombre: " + super.getNombre() +
                 "\n · Velocidad Máxima:" + velocidadMaxima;
     }
+
     
 }

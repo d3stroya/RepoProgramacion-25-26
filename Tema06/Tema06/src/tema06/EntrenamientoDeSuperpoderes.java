@@ -13,7 +13,7 @@ public class EntrenamientoDeSuperpoderes {
     public static void main(String[] args) {
         // 1. CREAR OBJETOS DE LA CLASE
         // Creamos un objeto de Flash
-//        Flash flash = new Flash("Flash", 1000);
+        Flash flash = new Flash("Flash", 1000);
         
         // Llamamos a los métodos de la interfaz
 //        flash.atravesarObjetos("Edificio");
@@ -43,8 +43,10 @@ public class EntrenamientoDeSuperpoderes {
         // Creamos una variable del tipo de la interfaz 
         // y guardamos objetos de distinto tipo (Flash y Hulk).
         // El mismo método se comporta de manera distinta (adopta múltiples formas).
-//        Defensa superheroeDefensivo = flash;
+        Defensa superheroeDefensivo = flash;
 //        superheroeDefensivo.defenderse();
+        
+//        System.out.println("");
         
 //        superheroeDefensivo = new Hulk("Hulk Defensivo", 500);
 //        superheroeDefensivo.defenderse();
@@ -53,23 +55,24 @@ public class EntrenamientoDeSuperpoderes {
         
         // 4. EL OPERADOR INSTANCEOF: nos dice de qué tipo es un objeto
         
-//        System.out.println("\n¿Qué superhéroe tenemos guardado en superheroeDefensivo?");
-//        if(superheroeDefensivo instanceof Hulk) {
-//            System.out.println("Es Hulk");
-//        } else if(superheroeDefensivo instanceof Flash) {
-//            System.out.println("Es Flash");
-//        } else {
-//            System.out.println("Es un superhéroe desconocido");
-//        }
+        System.out.println("\n¿Qué superhéroe tenemos guardado en superheroeDefensivo?");
+        if(superheroeDefensivo instanceof Hulk) {
+            System.out.println("Es Hulk");
+        } else if(superheroeDefensivo instanceof Flash) {
+            System.out.println("Es Flash");
+        } else {
+            System.out.println("Es un superhéroe desconocido");
+        }
         
-//        System.out.println("\n¿Qué superpoder tiene el superheroeDefensivo?");
-//        if(superheroeDefensivo instanceof SuperVelocidad) {
-//            System.out.println("Supervelocidad");
-//        } else if(superheroeDefensivo instanceof Defensa) {
-//            System.out.println("Defensa");
-//        } else {
-//            System.out.println("Ningua");
-//        }
+        System.out.println("\n¿Qué superpoder tiene el superheroeDefensivo?");
+        if(superheroeDefensivo instanceof SuperVelocidad) {
+            System.out.println("Supervelocidad");
+        } 
+        if(superheroeDefensivo instanceof Defensa) {
+            System.out.println("Defensa");
+        } else {
+            System.out.println("Ningua");
+        }
         
     }    
 
