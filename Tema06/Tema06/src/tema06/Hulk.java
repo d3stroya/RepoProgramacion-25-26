@@ -11,7 +11,7 @@ package tema06;
  * 
  * @author d3stroya
  */
-public class Hulk extends Superheroe {
+public class Hulk extends Superheroe implements Defensa {
     // ATRIBUTOS
     private int fuerzaBruta;
 
@@ -34,14 +34,31 @@ public class Hulk extends Superheroe {
     public void setFuerzaBruta(int fuerzaBruta) {
         this.fuerzaBruta = fuerzaBruta;
     }
+    
+    
+    
 
     // MÉTODOS
+    // Método abstraco de su superclase implementado
     @Override
     public void entrenar() {
         System.out.println("\n - ENTRENAMIENTO DE " + super.getNombre() + " -");
         System.out.println("Levantar edificios de 10 pisos.");
     }
-
+    
+    
+    
+    
+    
+    // Método de la interfaz Defensa implementado
+    @Override
+    public void defenderse() {
+        System.out.println("Hulk: ¡Aguanto golpes como si fueran cosquillas!");
+    }
+    
+    
+    
+    
     // TO STRING
     @Override
     public String toString() {
