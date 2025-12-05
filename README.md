@@ -8,3 +8,5 @@
 
 * [Repaso RA1, RA2 y RA3 (Temas 1 - 4)](./resumenes/repasoRA_1_2_3.md)
 
+* [Algoritmos recurrentes (Temas 2 - 3 - 4)](./resumenes/algoritmosRecurrentes.md)
+
