@@ -8,5 +8,9 @@
 
 * [Repaso RA1, RA2 y RA3 (Temas 1 - 4)](./Resumenes/repasoRA_1_2_3.md)
 
+* [Repaso Tema 5 y Tema 6 (Clases y objetos)](./Resumenes/repaso_tema5_y_tema6.md)
+
 * [Algoritmos recurrentes (Temas 2 - 3 - 4)](./Resumenes/algoritmosRecurrentes.md)
+
+
 
