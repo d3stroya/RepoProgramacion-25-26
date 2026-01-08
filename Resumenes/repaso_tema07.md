@@ -12,8 +12,8 @@ En este tema vas a aprender:
 ## Arrays de tipos simples
 [02. Arrays de tipos simples](https://youtu.be/tVNh7cEbQQI)
 
-<!-- ## Matrices de tipos simples -->
-<!-- [03. Matrices de tipos simples](https://youtu.be/Uayqu0jagHs) -->
+## Matrices de tipos simples
+[03. Matrices de tipos simples](https://youtu.be/Uayqu0jagHs)
 
-<!-- ## Ordenar y buscar en arrays -->
-<!-- [04. Ordenación y búsqueda en arrays](https://youtu.be/nh9UZJoKJVA) -->
+## Ordenar y buscar en arrays
+[04. Ordenación y búsqueda en arrays](https://youtu.be/nh9UZJoKJVA)
