@@ -12,5 +12,6 @@
 
 * [Algoritmos recurrentes (Temas 2 - 3 - 4)](./Resumenes/algoritmosRecurrentes.md)
 
+* [Repaso Tema 7 (Arrays de tipos simples)](./Resumenes/repaso_tema07.md)
 
 
