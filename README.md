@@ -12,6 +12,7 @@
 
 * [Algoritmos recurrentes (Temas 2 - 3 - 4)](./Resumenes/algoritmosRecurrentes.md)
 
-* [Repaso Tema 7 (Arrays de tipos simples)](./Resumenes/repaso_tema07.md)
+* [Teoría Tema 7 (Arrays de tipos simples)](./Resumenes/teoria_tema07.md)
 
+* [Teoría Tema 8 (Arrays de objetos)](./Resumenes/teoria_tema08.md)
 
