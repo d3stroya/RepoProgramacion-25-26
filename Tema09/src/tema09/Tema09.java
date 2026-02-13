@@ -101,9 +101,8 @@ public class Tema09 {
         
         // replaceAll() acepta como primer parámetro una expresión regular
 //        System.out.println("\n· cadena.replaceAll(regEx, caracter2)");
-        String numCuenta = "ES01 0000 1111 2222 3333";
+//        String numCuenta = "ES01 0000 1111 2222 3333";
 //        System.out.println(numCuenta.replaceAll("\\d", "*"));
-//        System.out.println(numCuenta.replace("\\d", "*"));
         
         // Convertir una cadena a mayúsculas o minúsculas
 //        System.out.println("\n· cadena.toUpperCase() y cadena.toLowerCase()");
@@ -111,9 +110,9 @@ public class Tema09 {
 //        System.out.println(nombre.toUpperCase());
         
         // Dividir una cadena según un patrón -> crea un array de Strings
-        System.out.println("\n· cadena.split(patrón)");
-        String[] n = numCuenta.split(" ");
-        System.out.println(Arrays.toString(n));
+//        System.out.println("\n· cadena.split(patrón)");
+//        String[] n = numCuenta.split(" ");
+//        System.out.println(Arrays.toString(n));
         
         
         
