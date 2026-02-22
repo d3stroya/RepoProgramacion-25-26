@@ -102,18 +102,18 @@ public class Tema09 {
         System.out.println("El tamaño del ArrayList es: " + edades.size());        
         
         // 1.9. Contiene
-        System.out.println(edades.contains(new Integer(0)));
+        System.out.println(edades.contains(0));
         
         // 1.10. Obtener el índice de un elemento
         // 1.10.1. Obtener el primer índice
-        System.out.println("El índice del número 3 es: " + edades.indexOf(new Integer(3)));
-        System.out.println("El índice del número 3000 es: " + edades.indexOf(new Integer(3000)));
+        System.out.println("El índice del número 3 es: " + edades.indexOf(3));
+        System.out.println("El índice del número 3000 es: " + edades.indexOf(3000));
         
         // 1.10.2. Obtener el último índice
-        System.out.println("El último índice de 3 es: " + edades.lastIndexOf(new Integer(3)));
+        System.out.println("El último índice de 3 es: " + edades.lastIndexOf(3));
         
         // Saber si un elemento está repetido
-        if(edades.indexOf(new Integer(5)) == edades.lastIndexOf(new Integer(5))) {
+        if(edades.indexOf(5) == edades.lastIndexOf(5)) {
             System.out.println("El número no está repetido");
         } else {
             System.out.println("El número está repetido");

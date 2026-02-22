@@ -32,8 +32,8 @@ public class Algoritmos {
     public static boolean pedirSeguir() {
         Scanner entrada = new Scanner(System.in);
         System.out.print("¿Quieres añadir otro coche? (s/n): ");
-        String respuesta = entrada.nextLine();
-        return respuesta.equalsIgnoreCase("s");
+        char respuesta = entrada.nextLine().charAt(0);
+        return respuesta == 's';
     }
     
     // 2. Mostrar
@@ -81,7 +81,7 @@ public class Algoritmos {
             System.out.println("¡Coche añadido correctamente!");
             
         } while(pedirSeguir());
-        coches.add(cocheVerde);
+//        coches.add(cocheVerde);
         
         mostrar(coches);
         
@@ -91,6 +91,10 @@ public class Algoritmos {
         System.out.println("¿La lista contiene mi coche verde de 90CV? " + buscarCoche(coches, cocheVerde));
         
 //        System.out.println("¿La lista contiene un coche de 90CV? " + buscar(coches, 90));
+
+        System.out.println("\n\nLos coches verdes son distintos:");
+        System.out.println("HashCode de cocheVerde: " + cocheVerde.hashCode());
+        System.out.println("HashCode del coche verde del arrayList: " + coches.get(2).hashCode());
         
     }
 }
