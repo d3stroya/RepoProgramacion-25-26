@@ -16,3 +16,6 @@
 
 * [Teoría Tema 8 (Arrays de objetos)](./Resumenes/teoria_tema08.md)
 
+* [Teoría Tema 10 (ArrayList)](./Resumenes/teoria_tema10.md)
+
+
