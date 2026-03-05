@@ -1,10 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package tema09;
+package tema10arraylist;
 
 import java.util.ArrayList;
+
 
 /**
  * Los ArrayList son estructuras de datos dinámicas
@@ -23,7 +20,7 @@ import java.util.ArrayList;
  * 
  * @author d3stroya
  */
-public class Tema09 {
+public class Tema10ArrayList {
 
     /**
      * @param args the command line arguments
@@ -129,6 +126,6 @@ public class Tema09 {
         System.out.println("El primer elemento del array es: " + edadesArray[0]);
    
         
-    }
-    
+    }   
+
 }

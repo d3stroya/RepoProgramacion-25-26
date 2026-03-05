@@ -1,17 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package tema09;
+package tema10arraylist;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+
 
 /**
  *
  * @author d3stroya
  */
 public class Algoritmos {
+
     // 1. Rellenar
     public static void insertar(ArrayList<Coche> coches) {
         coches.add(new Coche(pedirColor(), pedirPotencia()));
@@ -96,5 +94,6 @@ public class Algoritmos {
         System.out.println("HashCode de cocheVerde: " + cocheVerde.hashCode());
         System.out.println("HashCode del coche verde del arrayList: " + coches.get(2).hashCode());
         
-    }
+    }    
+
 }
