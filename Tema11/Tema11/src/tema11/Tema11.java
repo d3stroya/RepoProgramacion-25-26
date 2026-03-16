@@ -1,7 +1,6 @@
 
 package tema11;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.InputMismatchException;
@@ -220,7 +219,7 @@ public class Tema11 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Map<Integer, Jugador> mJugadores = new HashMap<>();
+        Map<Integer, Jugador> mJugadores = new HashMap<>(); // POLIMORFISMO
         int opcion = 0;
         
         do {
