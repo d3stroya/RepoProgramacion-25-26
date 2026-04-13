@@ -86,25 +86,25 @@ public class EjemploOrdenacionComparable {
          * sí necesitamos implementar la interfaz Comparable y el método
          * compareTo().
          */        
-        TreeSet<Alumno> treeSet = new TreeSet<>();
-        System.out.println("*** TREE_SET ***");
-        ordenacionTreeSet(treeSet);
+//        TreeSet<Alumno> treeSet = new TreeSet<>();
+//        System.out.println("*** TREE_SET ***");
+//        ordenacionTreeSet(treeSet);
         
         //Creación y ordenación de HashSet
         HashSet<Alumno> hashSet = new HashSet<>();
         rellenarSetAlumnos(hashSet);
         
-        System.out.println("\n*** CONJUNTO + STREAM().SORTED() ***");
-        hashSet.stream().sorted().forEach(System.out::println);
+//        System.out.println("\n*** CONJUNTO + STREAM().SORTED() ***");
+//        hashSet.stream().sorted().forEach(System.out::println);
         
         System.out.println("\n*** COMPARABLE + ARRAYS.SORT() ***");
         ordenacionHashSetConArrays(hashSet);
         
-        System.out.println("\n*** COMPARABLE + COLLECTIONS.SORT() ***");
-        ordenacionHashSetConCollections(hashSet);
+//        System.out.println("\n*** COMPARABLE + COLLECTIONS.SORT() ***");
+//        ordenacionHashSetConCollections(hashSet);
         
-        Set<Alumno> linkedHashSet = new LinkedHashSet<>();
-        rellenarSetAlumnos(linkedHashSet);                
+//        Set<Alumno> linkedHashSet = new LinkedHashSet<>();
+//        rellenarSetAlumnos(linkedHashSet);                
     }
 
 }

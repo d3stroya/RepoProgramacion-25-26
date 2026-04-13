@@ -1,7 +1,6 @@
 
 package ejemploordenacion;
 
-import java.util.Comparator;
 
 
 /**
@@ -9,7 +8,7 @@ import java.util.Comparator;
  * 
  * @author Daniel
  */
-public class Alumno implements Comparable<Alumno>{
+public class Alumno implements Comparable<Alumno> {
     
     //Atributos
     private String nombre;
@@ -46,26 +45,28 @@ public class Alumno implements Comparable<Alumno>{
     //toString
     @Override
     public String toString() {
-        return "Alumno{" + "nombre=" + nombre + ", numero=" + numero + '}';
+        // El alumno [nombre] tiene el número [número]
+        return "El alumno " + nombre + " tiene el número " + numero;
+//        return "Alumno{" + "nombre=" + nombre + ", numero=" + numero + '}';
     }
 
     //compareTo
     @Override
     // OPCIÓN 1
-    public int compareTo(Alumno a) {
-        if(this.numero < a.getNumero()) {
-            return 1;
-        } else if (this.numero > a.getNumero()) {
-            return -1;
-        } else {
-            return 0;
-        }        
-    }
+//    public int compareTo(Alumno a) {
+//        if(this.numero < a.getNumero()) {
+//            return 1;
+//        } else if (this.numero > a.getNumero()) {
+//            return -1;
+//        } else {
+//            return 0;
+//        }        
+//    }
     
     // OPCIÓN 2
-//    public int compareTo(Alumno a) {
-//        return a.getNumero() - this.numero;
-//    }
+    public int compareTo(Alumno a) {
+        return a.getNumero() - this.numero;
+    }
     
     // OPCIÓN 3
 //    public int compareTo(Alumno a) {
